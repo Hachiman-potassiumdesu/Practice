@@ -19,12 +19,14 @@ Before you begin, ensure you have the following installed:
 ## Setup and Installation
 
 1.  **Clone the repository:**
+
     ```bash
-    git clone <your-repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Hachiman-potassiumdesu/Practice.git
+    cd Practice/LocalRAG
     ```
 
 2.  **Create and activate a Python virtual environment:**
+
     ```bash
     # For macOS/Linux
     python3 -m venv .venv
@@ -36,6 +38,7 @@ Before you begin, ensure you have the following installed:
     ```
 
 3.  **Install the required dependencies:**
+
     ```bash
     pip install -r requirements.txt
     ```
@@ -50,7 +53,8 @@ Before you begin, ensure you have the following installed:
     # For the embedding model
     ollama pull mxbai-embed-large
     ```
-    *Ensure the Ollama application is running before executing these commands.*
+
+    _Ensure the Ollama application is running before executing these commands._
 
 ## Usage
 
