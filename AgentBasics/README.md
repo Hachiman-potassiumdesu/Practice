@@ -6,30 +6,29 @@ This project demonstrates various patterns for building AI agents with Python an
 
 The project is organized into two main directories:
 
--   `basics/`: This directory contains fundamental examples of using the OpenAI API.
--   `workflow_patterns/`: This directory showcases more advanced agentic workflows.
+- `basics/`: This directory contains fundamental examples of using the OpenAI API.
+- `workflow_patterns/`: This directory showcases more advanced agentic workflows.
 
 ### `basics/`
 
--   `basic.py`: A simple example of how to make a chat completion call to the OpenAI API.
--   `knowledge_base.json`: A sample knowledge base used by the `retrieval.py` example.
--   `retrieval.py`: Demonstrates how to use a knowledge base to answer questions.
--   `structured.py`: Shows how to get structured output from the model using Pydantic.
--   `tools.py`: An example of how to use tools with the OpenAI API.
--   `test.py`: A simple script for testing file paths.
+- `basic.py`: A simple example of how to make a chat completion call to the OpenAI API.
+- `knowledge_base.json`: A sample knowledge base used by the `retrieval.py` example.
+- `retrieval.py`: Demonstrates how to use a knowledge base to answer questions.
+- `structured.py`: Shows how to get structured output from the model using Pydantic.
+- `tools.py`: An example of how to use tools with the OpenAI API.
 
 ### `workflow_patterns/`
 
--   `parallelization.py`: An example of how to run multiple API calls in parallel to validate a user's request.
--   `prompt_chaining.py`: Demonstrates how to chain multiple prompts together to perform a complex task.
--   `routing.py`: Shows how to route a user's request to the appropriate tool or function.
+- `parallelization.py`: An example of how to run multiple API calls in parallel to validate a user's request.
+- `prompt_chaining.py`: Demonstrates how to chain multiple prompts together to perform a complex task.
+- `routing.py`: Shows how to route a user's request to the appropriate tool or function.
 
 ## Setup and Testing
 
 ### Prerequisites
 
--   Python 3.10 or higher
--   An OpenAI API key
+- Python 3.10 or higher
+- An OpenAI API key
 
 ### Installation
 
