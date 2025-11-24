@@ -210,9 +210,9 @@ The `utils/dataset.py` file contains the logic for loading datasets. You will ne
 
       ```
 
-3.  **Add a create\_`<custom dataset>`\_dataset function**: This function should initialize the custom dataset and return a torch.utils.data.DataLoader object. It should return both a training set and a validation set.
+3.  **Add a `create_<custom dataset>_dataset` function**: This function should initialize the custom dataset and return a torch.utils.data.DataLoader object. It should return both a training set and a validation set.
 
-4.  **Modify create_dataset function**: Add a new elif statement to call the create\_`<custom dataset>`\_dataset function with proper arguments.
+4.  **Modify create_dataset function**: Add a new elif statement to call the `create_<custom dataset>_dataset` function with proper arguments.
 
 ### 4. Train the Model with Your Custom Dataset
 
