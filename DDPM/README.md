@@ -13,6 +13,7 @@ This project is an implementation of a Denoising Diffusion Probabilistic Model (
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running the Application](#running-the-application)
+- [Using Custom Datasets](#using-custom-datasets)
 - [Project Files](#project-files)
 
 ## Project Structure
