@@ -1,0 +1,88 @@
+{
+  "model_config": {
+    "im_channels": 1,
+    "im_size_h": 28,
+    "im_size_w": 28,
+    "t_emb_dim": 128,
+    "encoder": {
+      "num_layers": 3,
+      "in_channels": [32, 64, 128],
+      "out_channels": [64, 128, 256],
+      "kernel_sizes": [3, 3, 3],
+      "strides": [1, 1, 1],
+      "paddings": [1, 1, 1],
+      "num_groups": 8,
+      "num_res_layers": 1,
+      "num_heads": 4,
+      "downsample": [true, true, false]
+    },
+    "bottleneck": {
+      "num_layers": 2,
+      "in_channels": [256, 256],
+      "out_channels": [256, 128],
+      "kernel_sizes": [3, 3],
+      "strides": [1, 1],
+      "paddings": [1, 1],
+      "num_groups": 8,
+      "num_res_layers": 1,
+      "num_heads": 4
+    },
+    "decoder": {
+      "num_layers": 3,
+      "in_channels": [256, 128, 64],
+      "out_channels": [64, 32, 16],
+      "kernel_sizes": [3, 3, 3],
+      "strides": [1, 1, 1],
+      "paddings": [1, 1, 1],
+      "num_groups": 8,
+      "num_res_layers": 1,
+      "num_heads": 4,
+      "upsample": [false, true, true]
+    }
+  },
+  "train_config": {
+    "seed": 42,
+    "num_epochs": 40,
+    "save_dir": "checkpoints/MNIST",
+    "misc": {
+      "num_timesteps": 1000,
+      "beta_start": 0.0001,
+      "beta_end": 0.02
+    },
+    "loss": {
+      "loss_fn": "CustomLoss",
+      "params": {
+        "loss_fn": "nn.MSELoss()"
+      }
+    },
+    "early_stopping": {
+      "patience": 10,
+      "tol": 0.001
+    },
+    "optimizer": {
+      "optimizer": "Adam",
+      "params": {
+        "lr": 5e-4,
+        "weight_decay": 1e-5
+      }
+    },
+    "scheduler": {
+      "scheduler": "get_cosine_schedule_with_warmup",
+      "warmup_ratio": 0.1
+    },
+    "data": {
+      "data_path": "data/MNIST",
+      "train_bs": 256,
+      "val_bs": 256
+    }
+  },
+  "inference_config": {
+    "num_timesteps": 1000,
+    "beta_start": 0.0001,
+    "beta_end": 0.02,
+    "num_grid_rows": 10,
+    "num_samples": 100,
+    "save_path": "samples/MNIST",
+    "ckpt_path": "checkpoints/MNIST/best_model.pth"
+  }
+}
