@@ -78,8 +78,8 @@ You can set up the project using either Conda (recommended for CUDA) or pip.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/DDPM.git
-    cd DDPM
+    git clone https://github.com/Hachiman-potassiumdesu/Practice.git
+    cd Practice/DDPM
     ```
 
 2.  **Create and activate a conda environment from `requirements_conda.txt`:**
