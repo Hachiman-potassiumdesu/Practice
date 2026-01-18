@@ -75,12 +75,25 @@ The core algorithm combines:
 
 ### Installation
 
-1.  Clone the repository (if applicable) or navigate to the project directory.
-2.  Install the required Python packages:
+You can set up the project using pip.
+
+1.  **Clone the repository:**
 
     ```bash
-    pip install -r requirements.txt
+    git clone https://github.com/Hachiman-potassiumdesu/checkpoint-ai.git
+    cd checkpoint-ai
     ```
+
+2.  **Create and activate a virtual environment:**
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate
+    ```
+
+3.  **Install dependencies from `requirements_pip.txt`:**
+    ```bash
+    pip install -r requirements.txt
 
 ### Running Training
 
