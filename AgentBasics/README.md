@@ -35,7 +35,7 @@ The project is organized into two main directories:
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Hachiman-potassiumdesu/Practice.git
+    git clone https://github.com/kaitosuzuki-CS/Practice.git
     cd Practice/AgentBasics
     ```
 
