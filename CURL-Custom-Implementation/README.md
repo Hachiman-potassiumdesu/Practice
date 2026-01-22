@@ -80,7 +80,7 @@ You can set up the project using pip.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Hachiman-potassiumdesu/Practice.git
+    git clone https://github.com/kaitosuzuki-CS/Practice.git
     cd Practice/CURL-Custom-Implementation
     ```
 
