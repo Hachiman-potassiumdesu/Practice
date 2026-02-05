@@ -5,5 +5,4 @@ test.py
 *.pyc
 /data
 /checkpoints/
-/samples/
 *.log
