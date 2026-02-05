@@ -1,0 +1,14 @@
+{
+  "model_config": {
+    "img_size": [1, 28, 28],
+    "latent_features": 2,
+    "encoder": {
+      "hidden_features": [784, 512, 256, 128],
+      "dropout": 0.1
+    },
+    "decoder": {
+      "hidden_features": [128, 256, 512, 784],
+      "dropout": 0.1
+    }
+  }
+}

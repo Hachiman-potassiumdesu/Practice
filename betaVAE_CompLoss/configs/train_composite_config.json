@@ -1,0 +1,38 @@
+{
+  "seed": 42,
+  "num_epochs": 40,
+  "save_dir": "checkpoints",
+  "loss": {
+    "params": {
+      "beta": 4.0,
+      "warmup_epochs": 15,
+      "free_bits": 0.2,
+      "lambda_recon": 1.0,
+      "lambda_pips": 1.0,
+      "lambda_disc": 0.5
+    }
+  },
+  "early_stopping": null,
+  "optimizer": {
+    "params_g": {
+      "lr": 5e-4,
+      "weight_decay": 1e-5
+    },
+    "params_d": {
+      "lr": 5e-5,
+      "warmup_ratio": 0.05
+    }
+  },
+  "scheduler": {
+    "params_g": {
+      "warmup_ratio": 0.1
+    },
+    "params_d": {
+      "warmup_ratio": 0.25
+    }
+  },
+  "data": {
+    "train_bs": 128,
+    "val_bs": 128
+  }
+}

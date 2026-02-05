@@ -1,0 +1,21 @@
+{
+  "model_config": {
+    "img_size": [1, 28, 28],
+    "latent_features": 2,
+    "encoder": {
+      "hidden_features": [784, 512, 256, 128],
+      "dropout": 0.1
+    },
+    "decoder": {
+      "hidden_features": [128, 256, 512, 784],
+      "dropout": 0.1
+    }
+  },
+  "discriminator_config": {
+    "im_channels": 1,
+    "hidden_channels": [32, 64, 128, 256],
+    "kernel_size": [4, 4, 3],
+    "stride": [2, 2, 1],
+    "padding": [1, 1, 1]
+  }
+}

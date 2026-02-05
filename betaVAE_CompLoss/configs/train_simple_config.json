@@ -1,0 +1,29 @@
+{
+  "seed": 42,
+  "num_epochs": 40,
+  "save_dir": "/content/drive/MyDrive/Research/practice/beta-VAE/checkpoints/NO LOSS 3",
+  "loss": {
+    "params": {
+      "beta": 4.0,
+      "warmup_epochs": 15,
+      "free_bits": 0.2,
+      "lambda_recon": 1.0
+    }
+  },
+  "early_stopping": null,
+  "optimizer": {
+    "params": {
+      "lr": 5e-4,
+      "weight_decay": 1e-5
+    }
+  },
+  "scheduler": {
+    "params": {
+      "warmup_ratio": 0.1
+    }
+  },
+  "data": {
+    "train_bs": 128,
+    "val_bs": 128
+  }
+}
